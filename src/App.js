@@ -1,15 +1,25 @@
 import React from "react";
-import { Navbar } from "./Components/navbar";
 import { Button, Avatar } from "antd";
 import { UserOutlined } from "@ant-design/icons";
+// import Logoo from "./images/Logoo.svg";
+import Navbar from "./Components/navbar";
+import Card from "./Components/card";
+import Cover from "./Components/cover";
+
 function App() {
   return (
     <div>
+      {/* <nav>
+        <img style={{}} src={Logoo} alt="Golomt Logo" />
+      </nav> */}
+
       <Navbar />
-      <Button onClick={() => alert("clicked")} type="primary" style={{}}>
+      <Cover />
+      <Card />
+      {/* <Button onClick={() => alert("clicked")} type="primary" style={{}}>
         hello
       </Button>
-      <Avatar alt="Remy Sharp" icon={<UserOutlined />} />
+      <Avatar alt="Remy Sharp" icon={<UserOutlined />} /> */}
     </div>
   );
 }
