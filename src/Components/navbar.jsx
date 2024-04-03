@@ -8,19 +8,17 @@ function Navbar() {
   const [active, setActive] = useState("nav_menu");
   const [toggleIcon, setToggleIcon] = useState("nav_toggler");
   const navToggle = () => {
-    active === "nav_menu"
-      ? setActive("nav_menu nav_active")
-      : setActive("nav_menu");
-
-    //  TogglerIcon
-
-    toggleIcon === "nav_toggler"
-      ? setToggleIcon("nav_toggler toggle")
-      : setToggleIcon("nav_toggler");
+    setActive(active === "nav_menu" ? "nav_menu nav_active" : "nav_menu");
+    setToggleIcon(
+      toggleIcon === "nav_toggler" ? "nav_toggler toggle" : "nav_toggler"
+    );
   };
 
   return (
-    <nav className="nav">
+    <nav
+      className="nav"
+      style={{ position: "fixed", top: 0, width: "100%", zIndex: 1000 }}
+    >
       <img
         style={{ width: "200px", height: "35px", margin: "10px" }}
         src={Logoo}

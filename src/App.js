@@ -4,8 +4,7 @@ import { UserOutlined } from "@ant-design/icons";
 // import Logoo from "./images/Logoo.svg";
 import Navbar from "./Components/navbar";
 import Card from "./Components/card";
-import Cover from "./Components/cover";
-
+import Cover from "./Components/coverimage";
 function App() {
   return (
     <div>
